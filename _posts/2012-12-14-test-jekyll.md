@@ -2,5 +2,9 @@
 layout: default
 title: Jekyll Test
 ---
+site.time
+{{site.time}}
 
-{{site}}
+site.posts
+{{site.posts}}
+
