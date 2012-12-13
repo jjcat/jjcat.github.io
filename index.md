@@ -3,6 +3,7 @@ layout: index
 title: JJCat Blog
 ---
 ##latest posts##
+<br>
 
 
 <ul>
