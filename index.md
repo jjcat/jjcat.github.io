@@ -2,8 +2,8 @@
 layout: index
 title: JJCat Blog
 ---
-<h2>latest posts</>
-<br></>
+##latest posts##
+
 
 <ul>
 {% for post in site.posts %}
