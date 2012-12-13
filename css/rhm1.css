@@ -28,6 +28,7 @@
 .rhm1-bg li{
 	float:left;
 	list-style:none;
+	margin-left: 14px;
 }
 .rhm1-bg li a{
 	float:left;
