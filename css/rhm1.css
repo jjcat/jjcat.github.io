@@ -1,6 +1,6 @@
 /* CSS Document */
 .rhm1{
-	width:600px;
+	width:680px;
 	height:64px;
 	margin:0 auto;
 	background:url(images/rhm1_bg.gif) repeat-x;		
@@ -49,17 +49,13 @@
 }
 .rhm1-bg li.current a{
 	color:#fff;
-	background:url(images/rhm1_hover_l.gif) no-repeat left 5px;
 }
 .rhm1-bg li.current a span{
 	color:#fff;
-	background:url(images/rhm1_hover_r.gif) no-repeat right 5px;
 }
 .rhm1-bg li a:hover{
 	color:#fff;
-	background:url(images/rhm1_hover_l.gif) no-repeat left 5px;
 }
 .rhm1-bg li a:hover span{
 	color:#fff;
-	background:url(images/rhm1_hover_r.gif) no-repeat right 5px;
 }
