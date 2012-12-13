@@ -45,7 +45,7 @@
 .rhm1-bg li a span{
 	float:left;
 	display:block;
-	padding:0 32px 0 18px;
+	padding:0 18px 0 18px;
 }
 .rhm1-bg li.current a{
 	color:#fff;
