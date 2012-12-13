@@ -1,9 +1,9 @@
 ---
-layout: default
-title: My Blog
+layout: index
+title: JJCat Blog
 ---
 <h2>{{page.title}}</h2>
-<p>latest post</p>
+<p>latest blog</p>
 <ul>
 {% for post in site.posts %}
 <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
