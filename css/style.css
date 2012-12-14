@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, p {
 h1 {
     font-size: 34px;
     margin-bottom: 44px;
+    margin-top: 44px;
 }
 h2 {
     font-size: 28px;

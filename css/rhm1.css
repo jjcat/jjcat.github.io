@@ -48,7 +48,6 @@
 .rhm1-bg li{
 	float:left;
 	list-style:none;
-	margin-left: 10px;
 }
 .rhm1-bg li a{
 	float:left;
@@ -66,7 +65,7 @@
 .rhm1-bg li a span{
 	float:left;
 	display:block;
-	padding:0 10px 0 10px;
+	padding:0 20px 0 0px;
 }
 .rhm1-bg li.current a{
 	color:#FF3030;
