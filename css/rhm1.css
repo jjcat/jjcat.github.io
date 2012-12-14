@@ -6,7 +6,7 @@
 	background:url(images/rhm1_bg.gif) repeat-x;		
 }
 
-H1 a .brand
+.brand H1 a 
 {
 		font-family:Georgia, Palatino, serif;
 		font-size: 60px;
