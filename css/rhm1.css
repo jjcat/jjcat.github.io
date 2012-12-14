@@ -1,9 +1,8 @@
 /* CSS Document */
 .rhm1{
 	width:680px;
-	height:64px;
-	margin:0 auto;
-	background:url(images/rhm1_bg.gif) repeat-x;		
+	height:32px;
+	margin:0 auto;	
 }
 
 .brand H1 a
@@ -30,20 +29,17 @@
 }
 
 .rhm1-left{
-	background:url(images/rhm1_l.gif) no-repeat;
 	width:15px;
-	height:64px;
+	height:32px;
 	float:left;
 }
 .rhm1-right{
-	background:url(images/rhm1_r.gif) no-repeat;
 	width:15px;
-	height:64px;
+	height:32px;
 	float:right;
 }
 .rhm1-bg{
-	background:url(images/rhm1_bg.gif) repeat-x;
-	height:64px;
+	height:32px;
 }
 .rhm1-bg ul{
 	list-style:none;
@@ -57,12 +53,12 @@
 .rhm1-bg li a{
 	float:left;
 	display:block;
-	color:#555;
+	color:#000;
 	text-decoration:none;
 	font:24px "Segoe UI Light", 'Lucida Sans', sans-serif;
 	font-weight:lighter;
 	padding:0 0 0 0px;
-	height:64px;
+	height:32px;
 	line-height:38px;
 	text-align:center;
 	cursor:pointer;	
@@ -73,14 +69,14 @@
 	padding:0 10px 0 10px;
 }
 .rhm1-bg li.current a{
-	color:#fff;
+	color:#FF3030;
 }
 .rhm1-bg li.current a span{
-	color:#fff;
+	color:#FF3030;
 }
 .rhm1-bg li a:hover{
-	color:#fff;
+	color:#FF3030;
 }
 .rhm1-bg li a:hover span{
-	color:#fff;
+	color:#FF3030;
 }
