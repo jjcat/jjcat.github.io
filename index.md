@@ -7,6 +7,8 @@ title: JJCat Blog
 {{ post.date | date: "%B %e, %Y" }}
 {{ post.content | truncatewords: 10}}
 <br>
+<a href = "{{post.url}}">More</a>
+<br>
 
 -------------------
 <br>
