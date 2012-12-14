@@ -53,14 +53,14 @@
 .rhm1-bg li{
 	float:left;
 	list-style:none;
-	margin-left: 14px;
+	margin-left: 0px;
 }
 .rhm1-bg li a{
 	float:left;
 	display:block;
 	color:#555;
 	text-decoration:none;
-	font:16px "Segoe UI Light", 'Lucida Sans', sans-serif;
+	font:18px "Segoe UI Light", 'Lucida Sans', sans-serif;
 	font-weight:lighter;
 	padding:0 0 0 18px;
 	height:64px;
