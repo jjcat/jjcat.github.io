@@ -8,6 +8,8 @@ title: JJCat Blog
 ##latest posts##
 <br>
 
+test
+
 
 <ul>
 {% for post in site.posts %}
