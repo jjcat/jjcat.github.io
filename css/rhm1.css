@@ -6,7 +6,7 @@
 	background:url(images/rhm1_bg.gif) repeat-x;		
 }
 
-.brand H1 a 
+.brand
 {
 	  color: #000000;
 		font-family:Georgia, Palatino, serif;
@@ -14,17 +14,17 @@
 		text-decoration: none;
 }
 
-.brand H1 a:visited 
+.brand a:visited 
 {
    text-decoration: none;
 }
 
-.brand H1 a:hover 
+.brand a:hover 
 {
     text-decoration: none;
 }
 
-.brand H1 a:link 
+.brand a:link 
 {
     text-decoration: none;
 }
