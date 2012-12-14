@@ -8,7 +8,7 @@ site.time
 #Test Comment#
 
 ##Highlight Test##
-{% highlight ruby %}
+{% highlight c %}
 	class Name
 	{
 		public int x;

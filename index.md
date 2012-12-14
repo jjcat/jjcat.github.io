@@ -5,7 +5,7 @@ title: JJCat Blog
 {% for post in site.posts limit:10 %}
 # <a href = "{{ post.url }}"> {{ post.title }}</a>#
 {{ post.date | date: "%B %e, %Y" }}
-{{ post.content }}
+{{ post.content | truncatewords: 10}}
 <br>
 
 -------------------
