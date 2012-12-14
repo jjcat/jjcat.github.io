@@ -6,7 +6,7 @@ body{
     font-family:"Georgia","ËÎÌו", "Palatino", serif;
     color: #444444;
     line-height: 1;
-    max-width: 42em;
+    max-width: 660px;
     padding: 30px;
 }
 h1, h2, h3, h4 {
@@ -78,7 +78,7 @@ li ul, li ul {
 p, ul, ol {
     font-size: 15px;
     line-height: 24px;
-    max-width: 42em;
+    max-width: 660px;
 }
 code, pre {
     max-width: 45em;
@@ -117,7 +117,7 @@ blockquote {
     border-left:.5em solid #eee;
     padding: 0 2em;
     margin-left:0;
-    max-width: 42em;
+    max-width: 660px;
 }
 blockquote  cite {
     font-size:14px;
@@ -130,7 +130,7 @@ blockquote cite:before {
 
 blockquote p {  
     color: #666;
-    max-width: 42em;
+    max-width: 660px;
 }
 hr {
     width: 660px;
