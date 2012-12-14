@@ -52,10 +52,10 @@
 .rhm1-bg li a{
 	float:left;
 	display:block;
-	color:#000;
+	color:#FF3030;
 	text-decoration:none;
 	font:24px "Segoe UI Light", 'Lucida Sans', sans-serif;
-	font-weight:lighter;
+	font-weight:bold;
 	padding:0 0 0 0px;
 	height:32px;
 	line-height:38px;
