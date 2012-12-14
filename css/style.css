@@ -312,11 +312,3 @@ a:hover img {
 	 font-family:"Segoe UI Light", "SimYou", "Microsoft YaHei", "Georgia", "Palatino", serif;
 	 font-weight: 100;
 }
-
-foot_cat
-{
-	background-image: url( "images/Cat.jpg");
-	width: auto;
-	height: 200;
-	margin: 0 auto;
-}
