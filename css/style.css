@@ -40,6 +40,9 @@ h6{
 ::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
 ::selection{background:rgba(255,255,0,0.3);color:#000}
 
+br::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+br::selection{background:rgba(255,255,0,0.3);color:#000}
+
 a::-moz-selection{background:rgba(255,255,0,0.3);color:#FF3030}	
 a::selection{background:rgba(255,255,0,0.3);color:#FF3030}
 
