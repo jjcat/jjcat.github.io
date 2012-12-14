@@ -307,3 +307,9 @@ a:hover img {
 	-webkit-box-shadow: 1px 1px 5px #999;
         box-shadow: 1px 1px 5px #999;
 }
+
+#disqus_thread h1 h2 h3 h4
+{
+	 font-family:"Segoe UI Light", "SimYou", "Microsoft YaHei", "Georgia", "Palatino", serif;
+	 font-weight: 100;
+}
