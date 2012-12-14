@@ -61,11 +61,12 @@
 	line-height:38px;
 	text-align:center;
 	cursor:pointer;	
+	margin: 0 30px 0 0
 }
 .rhm1-bg li a span{
 	float:left;
 	display:block;
-	padding:0 20px 0 0px;
+	padding:0;
 }
 .rhm1-bg li.current a{
 	color:#FF3030;
@@ -74,8 +75,8 @@
 	color:#FF3030;
 }
 .rhm1-bg li a:hover{
-	color:#FF3030;
+	color:#000;
 }
 .rhm1-bg li a:hover span{
-	color:#FF3030;
+	color:#000;
 }
