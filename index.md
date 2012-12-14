@@ -6,7 +6,6 @@ title: JJCat Blog
 # <a href = "{{ post.url }}"> {{ post.title }}</a>#
 {{ post.date | date: "%B %e, %Y" }}
 {{ post.content | truncatewords: 10}}
-<br>
 <a href = "{{post.url}}">More</a>
 <br>
 
