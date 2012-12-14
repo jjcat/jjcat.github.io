@@ -315,7 +315,8 @@ a:hover img {
 
 foot_cat
 {
-	background: "images/Cat.jpg";
+	background-image: url( "images/Cat.jpg");
 	width: auto;
-	height: auto;
+	height: 200;
+	margin: 0 auto;
 }
