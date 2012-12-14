@@ -1,16 +1,16 @@
 ---
-layout: index
-title: about
+    layout: index
+    title: about
 ---
 
 
 
-###follow me###
+##Follow Me##
 
 - [JJCat@Github](http://github.com/jjcat "github")
 - [JieJieUp@Weibo](http://weibo.com/jiejieup "sina weibo")
 
-###contact  me###
+##Contact  Me##
 - Website: [WWW.JJCat.Me](http://www.JJCat.me)
 - Email:   JJCat@Outlook.COM
 
