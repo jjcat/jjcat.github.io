@@ -1,6 +1,6 @@
 ---
     layout: index
-    title: about
+    title: ABOUT
 ---
 ##Follow Me##
 
@@ -9,7 +9,6 @@
 - [JieJieUp@Weibo](http://weibo.com/jiejieup "sina weibo")
 
 ##Contact  Me##
-
 
 
 - Website: [WWW.JJCat.Me](http://www.JJCat.me)
