@@ -49,6 +49,8 @@ a {
     color: #FF3030;
     margin: 0;
     padding: 0;
+    vertical-align: baseline;
+    text-decoration: none;
 }
 a:hover {
     text-decoration: none;
