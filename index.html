@@ -9,7 +9,7 @@ title: JJCat Blog
   	{% if post.tunecount %}
   	{{ post.content | truncatewords: {{post.tunecount}} }}
   	{%else%}
-     {{ post.content | truncatewords: 20}}
+     {{ post.content | truncatewords: 10}}
      {%endif%}
 </div>
 <p><span></span></p>
