@@ -2,6 +2,9 @@
 layout: index
 title: JJCat Blog
 ---
+{% assign first_post = site.posts.first %}
+#{{ first_post.title }}#
+{{ first_post.content }}
 ##latest posts##
 <br>
 
