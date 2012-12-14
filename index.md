@@ -12,6 +12,10 @@ title: JJCat Blog
 # <a href = "{{ post.url }}"> {{ post.title }}</a>#
 {{ post.date | date: "%B %e, %Y" }}
 {{ post.content }}
+
+-------------------
+<br>
+
 {% endfor %}
 
 <br>
