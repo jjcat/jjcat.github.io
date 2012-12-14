@@ -10,6 +10,7 @@
 {
 		font-family:Georgia, Palatino, serif;
 		font-size: 60px;
+		text-decoration: none;
 }
 
 .brand H1 a:visited 
@@ -18,6 +19,11 @@
 }
 
 .brand H1 a:hover 
+{
+    text-decoration: none;
+}
+
+.brand H1 a:link 
 {
     text-decoration: none;
 }
