@@ -1,13 +1,13 @@
 body{
     margin: 0 auto;
-    font-family:"ËÎÌו",Georgia, Palatino, serif;
+    font-family:"Georgia","ËÎÌו", "Palatino", serif;
     color: #444444;
     line-height: 1;
     max-width: 42em;
     padding: 30px;
 }
 h1, h2, h3, h4 {
-    font-family:Microsoft YaHei, Georgia, Palatino, serif;
+    font-family:"Segoe UI Light", "Microsoft YaHei", "Georgia", "Palatino", serif;
     color: #111111;
     font-weight: 400;
 }
@@ -80,7 +80,7 @@ p, ul, ol {
 }
 code, pre {
     max-width: 45em;
-    font-family: Consolas, Monaco, Andale
+    font-family: Consolas, Monaco, Andale,"Microsoft YaHei";
     Mono, monospace;
     font-size: 14px;
     border-radius: 3px;
