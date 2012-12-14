@@ -38,17 +38,17 @@ h6{
 }
 
 a {
-    color: #0099ff;
+    color: #FF3030;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
 }
 a:hover {
     text-decoration: none;
-    color: #ff6600;
+    color: #FF3030;
 }
 a:visited {
-    color: purple;
+    color: FF3030;
 }
 ul, ol {
     padding: 0;
