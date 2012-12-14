@@ -46,6 +46,7 @@
 	margin:0 auto;
 }
 .rhm1-bg li{
+	margin-left: 0px;
 	float:left;
 	list-style:none;
 }
