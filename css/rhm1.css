@@ -9,7 +9,8 @@
 .brand H1 a
 {
 	  color: #000000;
-		font-family:Georgia, Palatino, serif;
+		font-family:Segoe UI, Georgia, Palatino, serif;
+		font-weight:light;
 		font-size: 60px;
 		text-decoration: none;
 }
