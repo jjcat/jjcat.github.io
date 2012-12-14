@@ -49,7 +49,6 @@ a {
     color: #FF3030;
     margin: 0;
     padding: 0;
-    vertical-align: baseline;
 }
 a:hover {
     text-decoration: none;
