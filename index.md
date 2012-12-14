@@ -6,6 +6,7 @@ title: JJCat Blog
 # <a href = "{{ post.url }}"> {{ post.title }}</a>#
 {{ post.date | date: "%B %e, %Y" }}
 {{ post.content }}
+<br>
 
 -------------------
 <br>
@@ -13,8 +14,5 @@ title: JJCat Blog
 {% endfor %}
 
 <br>
-<ul>
-{% for post in site.posts %}
-<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+
+<a href = "/archive.html">All Posts</a>
