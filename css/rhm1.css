@@ -12,6 +12,16 @@
 		font-size: 60px;
 }
 
+.brand H1 a:visited 
+{
+   text-decoration: none;
+}
+
+.brand H1 a:hover 
+{
+    text-decoration: none;
+}
+
 .rhm1-left{
 	background:url(images/rhm1_l.gif) no-repeat;
 	width:15px;
