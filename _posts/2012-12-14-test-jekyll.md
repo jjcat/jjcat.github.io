@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Jekyll Test
+tunecount: 100
 ---
 site.time
 {{site.time}} 
