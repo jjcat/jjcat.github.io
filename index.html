@@ -8,13 +8,9 @@ title: JJCat Blog
   <p>{{ post.date | date: "%B %e, %Y" }}</>
      {{ post.content | truncatewords: 10}}
 </div>
-
-<a href = "{{post.url}}">More</a>
 <p><br></p>
-
+<a href = "{{post.url}}">More</a>
 <hr/>
-<span></span>
-
 {% endfor %}
 
 <a href = "/archive.html">All Posts</a>
