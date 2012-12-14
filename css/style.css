@@ -59,8 +59,8 @@ a {
 }
 a:hover {
     text-decoration: none;
-    color: #FF3030;
-	   text-shadow: 1px 1px 2px #ddd;
+    color: #FFFFFF;
+    background-color: #FF3030;
 }
 a:visited {
     color: FF3030;
