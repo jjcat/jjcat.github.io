@@ -5,6 +5,12 @@
 	margin:0 auto;
 	background:url(images/rhm1_bg.gif) repeat-x;		
 }
+
+.rhm1 H1 a
+{
+		font:12px 'Times New Roman', sans-serif;
+}
+
 .rhm1-left{
 	background:url(images/rhm1_l.gif) no-repeat;
 	width:15px;
