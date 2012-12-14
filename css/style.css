@@ -21,9 +21,6 @@ h1 {
 }
 h2 {
     font-size: 28px;
-    /* The bottom margin is small. It's designed to be used with gray meta text
-     * below a post title. */
-    margin: 44px 0 0px;
 }
 h3 {
     font-size: 24px;
