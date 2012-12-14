@@ -8,7 +8,8 @@
 
 .brand H1 a
 {
-		font:12px 'Times New Roman', sans-serif;
+		font-family:Georgia, Palatino, serif;
+		font-size: 60px;
 }
 
 .rhm1-left{
