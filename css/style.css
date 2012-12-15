@@ -309,6 +309,12 @@ p a:hover img {
 	-moz-box-shadow: 1px 1px 5px #999;
 	-webkit-box-shadow: 1px 1px 5px #999;
   box-shadow: 1px 1px 5px #999;
+  background-color: #FFFFFF;
+}
+
+p a .imgurl
+{
+	background-color:#FFFFFF;
 }
 
 #disqus_thread h1 h2 h3 h4
