@@ -7,7 +7,7 @@ title: HOME
 	<h1> <a href = "{{ post.url }}"> {{ post.title | upcase}}</a></h1>
   <p>{{ post.date | date: "%B %e, %Y" }}</>
   	{% if post.tunecount %}
-  	{{ post.content | truncatewords: {{post.tunecount}} }}
+  	{{ post.content | truncatewords: {{post.cutcount}} }}
   	{%else%}
      {{ post.content | truncatewords: 20}}
      {%endif%}
