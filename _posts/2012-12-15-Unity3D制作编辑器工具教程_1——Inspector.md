@@ -120,7 +120,7 @@ Editor class继承自ScriptableObject，ScriptableObject有三个关于生命周
 
 在下述的初始化代码中，我们获取了当前选中的对象的成员变量，用来显示在Inspector面板上。
 
-{%highlight|c#%}
+{%highlight|C#%}
 void OnEnable()
 {
  	MyPlayer myPlayer = target as MyPlayer;
