@@ -91,7 +91,7 @@ public class MyPlayerInspector : Editor
 }
 {%endhighlight%}
 
-然后打开Unity编辑器，选中GameObject，您就能看到自定义Inspector面板的内容了。下面对这些代码进行详细讲解。
+然后打开Unity编辑器，选中GameObject，您就能看到自定义Inspector面板的内容了。下面对这MyPlayerEditor类进行详细讲解。
 
 
 ##Editor class##
