@@ -1,7 +1,7 @@
 ---
     layout: default
     title: Unity3D Tools Lesson 1--Inspector
-    cutcount: 80
+    cutcount: 10
 ---
 ## 简介 ##
 Inspector面板可以用来对Component和Asset进行快速编辑。如果您的Unity中没有看到Inspector面板，可以通过快捷键方式*Ctrl+3*打开。这节课我们将对一个类制作一个自定义的Inspector面板。
