@@ -118,7 +118,7 @@ Editor class继承自ScriptableObject，ScriptableObject有三个关于生命周
 
 对于MyPlayerInspector来说，每当要显示自定义Inspector的时候就会调用OnEable，当切换到其他Inspector面板的时候就会调用OnDisable。所以OnEnable是进行初始化最好的地方。
 
-在下述的初始化代码中，我们获取了当前选中的对象的成员变量。
+在下述的初始化代码中，我们获取了当前选中的对象的成员变量。[^1]
 
 {%highlight csharp%}
 void OnEnable()
@@ -166,5 +166,5 @@ EditorGUI类有一个方便布局的版本，叫做EditorGUILayout。使用Edior
 ##总结##
 我们在这一课中详细介绍了创建一个自定义Inspector的详细步骤。我们制作了一个简单的Inspector面板，下一课我们会具体介绍更多的Editor class的功能，重新制作一个纹理查看器。 
 
-
+[^1]:test footnote
 	
