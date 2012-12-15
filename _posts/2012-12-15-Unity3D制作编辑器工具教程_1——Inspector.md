@@ -9,15 +9,18 @@ Inspector面板可以用来对Component和Asset进行快速编辑。如果您的
 ##默认的Inspector样式##
 新建一个C#文件，命名为**MyPlayer.cs**，输入下面的代码。这些代码定义了一个MyPlayer class，它继承自MonoBehaviour，是一个用户自定义的组件。	
 
-	using UnityEngine;
-	[System.Serializable]
-	using System.Collections;
-	public class MyPlayer : MonoBehaviour 
-	{
-    	public int armor  = 75;
-    	public int damage = 75;
-    	public GameObject gun; 
-	}
+{%highlight|c#%}
+using UnityEngine;
+[System.Serializable]
+using System.Collections;
+public class MyPlayer : MonoBehaviour 
+{
+	public int armor  = 75;
+	public int damage = 75;
+	public GameObject gun; 
+}
+{%endhighlight%}
+
 
 >  **注意：**是不是只有派生自MonoBehaviour的类才能够进行自定义化Inspector? 不是，例如贴图，模型等不用加到GameObject上的资源文件，可以在Project面板下显示并选中，在Inspecotor面板中会列出这些资源的属性，并且可以进行修改。如果您也要自定义asset，需要继承自ScriptableObject class。自定义资源会在以后的课程中进行讲解。
 
@@ -43,97 +46,27 @@ Unity默认的Inspector面板可以随意对该变量进行修改。如果MyPlay
 >**注意**：为什么要放在Editor文件夹下？Unity规定所有的Editor classes都必须放在Editor文件夹下，这样Untiy运行Editor文件夹的Editor class，游戏中运行的代码不要放在Editor文件夹下。
 
 下面的代码将会创建一个自定义的Inspector，你将会在Inspector面板中看到最后的效果。
-<!Insert code for write customize Inspector for MyPlayer class>
+{%highlight|c#%}
+using UnityEngine;
+using UnityEditor;
 
-	using UnityEngine;
-	using UnityEditor;
-	
-	[CustomEditor(typeof(MyPlayer))]
-	public class MyPlayerInspector : Editor
-	{
-        public int damageProp;
-        public int armorProp;
-        public GameObject gunProp;
+[CustomEditor(typeof(MyPlayer))]
+public class MyPlayerInspector : Editor
+{
+    public int damageProp;
+    public int armorProp;
+    public GameObject gunProp;
 
-	    // Initilization
-	    void OnEnable()
-	    {
-	     	MyPlayer myPlayer = target as MyPlayer;
-	        damageProp = myPlayer.damage;
-	        armorProp = myPlayer.armor;
-	        gunProp = myPlayer.gun;
-	    }
-	
-	    public override void OnInspectorGUI()
-	    {
-	        // show slider and process bar
-	        damageProp =  EditorGUILayout.IntSlider("Damage", damageProp, 0, 100);
-	        ProgressBar(damageProp/ 100.0f, "Damage");
-	
-	        // show slider and process bar
-	        armorProp = EditorGUILayout.IntSlider("Armor", armorProp, 0, 100);
-	        ProgressBar(armorProp/ 100.0f, "Armor");
-	            
-	        gunProp = EditorGUILayout.ObjectField("Player's Gun", gunProp, typeof(GameObject), true) as GameObject;
-	
-	    }
-	
-	    // Custom GUILayout progress bar.
-	    private void ProgressBar(float value, string label)
-	    {
-	        Rect rect = GUILayoutUtility.GetRect(18, 18, "TextField");
-	        EditorGUI.ProgressBar(rect, value, label);
-	        EditorGUILayout.Space();
-	    }
-	
-	}
-
-然后打开Unity编辑器，选中GameObject，您就能看到自定义Inspector面板的内容了。
-
-
-##Editor class##
-Editor class是所有自定义Inspector的基类。我们必需从Editor class开始派生我们自己的Inspector。
-
-	[CustomEditor(typeof(MyPlayer))]
-	public class MyPlayerInspector : Editor
-	{
-		// others...
-	}
-
-下面这行代码指定了自定义Inspector的关联类型，我们这里要对MyPlayer class进行关联。
-
-	CustomEditor[typeof(MyPlayer)]
-
-## 初始化 ##
-Editor class继承自ScriptableObject，ScriptableObject有三个关于生命周期的消息响应函数:
-
--  OnEable
--  OnDisable
--  OnDestory
-
-对于MyPlayerInspector来说，每当要显示自定义Inspector的时候就会调用OnEable，当切换到其他Inspector面板的时候就会调用OnDisable。所以OnEnable是进行初始化最好的地方。
-
-在下述的初始化代码中，我们获取了当前选中的对象的成员变量，用来显示在Inspector面板上。
-
-
+    // Initilization
     void OnEnable()
     {
      	MyPlayer myPlayer = target as MyPlayer;
         damageProp = myPlayer.damage;
-        armorProp  = myPlayer.armor;
-        gunProp    = myPlayer.gun;
+        armorProp = myPlayer.armor;
+        gunProp = myPlayer.gun;
     }
-	
-在上述的代码中，出现了一个新变量target，他代表了当前要进行Inspect的对象，在MyPlayerEditor类中，我们指定Inspect MyPlayer类，所以target就是当前My Player组件的一个引用。我们使用as操作符先对target进行类型转化。
 
-
-
-Edtior类还有两个成员变量是用来表示当前选中的对象，他们分别叫做targets和serializedObject。
-
-##绘制GUI##
-如果您在游戏开发中使用过Unity自带的GUI类，那么您会发现EditorGUI类接口同GUI基本是同样的设计思路。所有的UI绘制必须放在OnInspectorGUI方法中，就好比在游戏中所与的GUI函数必须放在OnGUI方法中。
-
-	public override void OnInspectorGUI()
+    public override void OnInspectorGUI()
     {
         // show slider and process bar
         damageProp =  EditorGUILayout.IntSlider("Damage", damageProp, 0, 100);
@@ -155,6 +88,79 @@ Edtior类还有两个成员变量是用来表示当前选中的对象，他们�
         EditorGUILayout.Space();
     }
 
+}
+{%endhighlight%}
+
+然后打开Unity编辑器，选中GameObject，您就能看到自定义Inspector面板的内容了。
+
+
+##Editor class##
+Editor class是所有自定义Inspector的基类。我们必需从Editor class开始派生我们自己的Inspector。
+
+{%highlight|c#%}
+[CustomEditor(typeof(MyPlayer))]
+public class MyPlayerInspector : Editor
+{
+	// others...
+}
+{%endhighlight%}
+
+下面这行代码指定了自定义Inspector的关联类型，我们这里要对MyPlayer class进行关联。
+{%highlight|c#%}
+CustomEditor[typeof(MyPlayer)]
+{%endhighlight%}
+## 初始化 ##
+Editor class继承自ScriptableObject，ScriptableObject有三个关于生命周期的消息响应函数:
+
+-  OnEable
+-  OnDisable
+-  OnDestory
+
+对于MyPlayerInspector来说，每当要显示自定义Inspector的时候就会调用OnEable，当切换到其他Inspector面板的时候就会调用OnDisable。所以OnEnable是进行初始化最好的地方。
+
+在下述的初始化代码中，我们获取了当前选中的对象的成员变量，用来显示在Inspector面板上。
+
+{%highlight|c#%}
+void OnEnable()
+{
+ 	MyPlayer myPlayer = target as MyPlayer;
+    damageProp = myPlayer.damage;
+    armorProp  = myPlayer.armor;
+    gunProp    = myPlayer.gun;
+}
+{%endhighlight%}
+	
+在上述的代码中，出现了一个新变量target，他代表了当前要进行Inspect的对象，在MyPlayerEditor类中，我们指定Inspect MyPlayer类，所以target就是当前My Player组件的一个引用。我们使用as操作符先对target进行类型转化。
+
+
+
+Edtior类还有两个成员变量是用来表示当前选中的对象，他们分别叫做targets和serializedObject。
+
+##绘制GUI##
+如果您在游戏开发中使用过Unity自带的GUI类，那么您会发现EditorGUI类接口同GUI基本是同样的设计思路。所有的UI绘制必须放在OnInspectorGUI方法中，就好比在游戏中所与的GUI函数必须放在OnGUI方法中。
+{%highlight|c#%}
+public override void OnInspectorGUI()
+{
+    // show slider and process bar
+    damageProp =  EditorGUILayout.IntSlider("Damage", damageProp, 0, 100);
+    ProgressBar(damageProp/ 100.0f, "Damage");
+
+    // show slider and process bar
+    armorProp = EditorGUILayout.IntSlider("Armor", armorProp, 0, 100);
+    ProgressBar(armorProp/ 100.0f, "Armor");
+        
+    gunProp = EditorGUILayout.ObjectField("Player's Gun", gunProp, typeof(GameObject), true) as GameObject;
+
+}
+
+// Custom GUILayout progress bar.
+private void ProgressBar(float value, string label)
+{
+    Rect rect = GUILayoutUtility.GetRect(18, 18, "TextField");
+    EditorGUI.ProgressBar(rect, value, label);
+    EditorGUILayout.Space();
+}
+{%endhighlight%}
 EditorGUI类有一个方便布局的版本，叫做EditorGUILayout。使用EdiorGUILayout可以不用指定每个控件的坐标位置从而省去了每次进行计算坐标的苦差事。EditorGUILayout会更具调用顺序进行自动布局。在上述代码中我就使用了EditorGUILayout。
 
 ##总结##
