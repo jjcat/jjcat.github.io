@@ -9,7 +9,7 @@ Inspector面板可以用来对Component和Asset进行快速编辑。如果您的
 ##默认的Inspector样式##
 新建一个C#文件，命名为**MyPlayer.cs**，输入下面的代码。这些代码定义了一个MyPlayer class，它继承自MonoBehaviour，是一个用户自定义的组件。	
 
-{%highlight|c#%}
+{%highlight c#%}
 using UnityEngine;
 [System.Serializable]
 using System.Collections;
@@ -46,7 +46,7 @@ Unity默认的Inspector面板可以随意对该变量进行修改。如果MyPlay
 >**注意**：为什么要放在Editor文件夹下？Unity规定所有的Editor classes都必须放在Editor文件夹下，这样Untiy运行Editor文件夹的Editor class，游戏中运行的代码不要放在Editor文件夹下。
 
 下面的代码将会创建一个自定义的Inspector，你将会在Inspector面板中看到最后的效果。
-{%highlight|c#%}
+{%highlight  c#%}
 using UnityEngine;
 using UnityEditor;
 
@@ -97,7 +97,7 @@ public class MyPlayerInspector : Editor
 ##Editor class##
 Editor class是所有自定义Inspector的基类。我们必需从Editor class开始派生我们自己的Inspector。
 
-{%highlight|c#%}
+{%highlight c#%}
 [CustomEditor(typeof(MyPlayer))]
 public class MyPlayerInspector : Editor
 {
@@ -106,7 +106,7 @@ public class MyPlayerInspector : Editor
 {%endhighlight%}
 
 下面这行代码指定了自定义Inspector的关联类型，我们这里要对MyPlayer class进行关联。
-{%highlight|c#%}
+{%highlight c#%}
 CustomEditor[typeof(MyPlayer)]
 {%endhighlight%}
 ## 初始化 ##
@@ -120,7 +120,7 @@ Editor class继承自ScriptableObject，ScriptableObject有三个关于生命周
 
 在下述的初始化代码中，我们获取了当前选中的对象的成员变量，用来显示在Inspector面板上。
 
-{%highlight|C#%}
+{%highlight c#%}
 void OnEnable()
 {
  	MyPlayer myPlayer = target as MyPlayer;
@@ -138,7 +138,7 @@ Edtior类还有两个成员变量是用来表示当前选中的对象，他们�
 
 ##绘制GUI##
 如果您在游戏开发中使用过Unity自带的GUI类，那么您会发现EditorGUI类接口同GUI基本是同样的设计思路。所有的UI绘制必须放在OnInspectorGUI方法中，就好比在游戏中所与的GUI函数必须放在OnGUI方法中。
-{%highlight|c#%}
+{%highlight c#%}
 public override void OnInspectorGUI()
 {
     // show slider and process bar
