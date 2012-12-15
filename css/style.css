@@ -41,14 +41,14 @@ h6{
 	font-size: 12px;
 }
 
-::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
-::selection{background:rgba(255,255,0,0.3);color:#000}
+::-moz-selection{background:rgba(255,48,48,1.0);color:#fff}
+::selection{background:rgba(255,48,48,1.0);color:#fff}
 
 
 
 
-a::-moz-selection{background:rgba(255,255,0,0.3);color:#FF3030}	
-a::selection{background:rgba(255,255,0,0.3);color:#FF3030}
+a::-moz-selection{background:rgba(255,48,48,1.0);color:#000}	
+a::selection{background:rgba(255,48,48,1.0);color:#000}
 
 a {
     color: #FF3030;
