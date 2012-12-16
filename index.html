@@ -6,11 +6,9 @@ title: HOME
 <div>
 	<h1> <a href = "{{ post.url }}"> {{ post.title | upcase}}</a></h1>
   <p>{{ post.date | date: "%B %e, %Y" }}</>
-  	{% if post.tunecount %}
-  	{{ post.content | truncate: {{post.cutcount}} }}
-  	{%else%}
-     {{ post.content | truncatewords: 20}}
-     {%endif%}
+
+  	{{ post.content  }}
+
 </div>
 <p><span></span></p>
 <p><a href = "{{post.url}}">MORE</a></p>
