@@ -1,2 +1,12 @@
-_posts/2012-13-31-template.md
-_posts/2012-12-13-cpp_test.md
+_site/*
+_theme_packages/*
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+
+image/*
