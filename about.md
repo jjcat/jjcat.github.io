@@ -11,7 +11,7 @@
 ##Contact  Me##
 
 
-- Website: [WWW.JJCat.Me](http://www.JJCat.me)
-- Email:   JJCat@Outlook.COM
+- Website: [www.JJCat.me](http://www.JJCat.me)
+- Email:   JJCat@Outlook.com
 
  
