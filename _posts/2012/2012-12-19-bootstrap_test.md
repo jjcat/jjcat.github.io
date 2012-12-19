@@ -13,7 +13,9 @@ cell | center-align        | right-align        |
 {: .table}
 
 ##Lead body
+**no lead**
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 
+**lead**
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 {: .lead}
