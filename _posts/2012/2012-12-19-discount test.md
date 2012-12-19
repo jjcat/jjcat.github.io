@@ -1,7 +1,7 @@
 ---
     layout: post
     title: Discoount Test
-    tagline:" "
+    tagline:
     tags: ["markdown", "discount"]
 ---
 Center A Paragraph
