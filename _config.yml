@@ -20,7 +20,7 @@ author :
   
 markdown : rdiscount
 rdiscount:
-  extensions: [smart footnotes]
+  extensions: [footnotes]
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
