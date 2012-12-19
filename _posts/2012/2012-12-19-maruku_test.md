@@ -89,6 +89,8 @@ cell | center-align        | right-align        |
 
 [^foot]: I really was missing those.
 
+![TestImg](/image/github_pages_lesson_00.png "try")
+
 
 * footnotes [^foot](Http://tteee)
 [^foot]: I really was missing those.
