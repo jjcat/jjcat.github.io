@@ -24,6 +24,7 @@ Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis moll
 - muted
   Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.{:.muted}
 - warning
+  Etiam porta sem malesuada magna mollis euismod.{: .text-warning}
 - error
 - info
 - success
