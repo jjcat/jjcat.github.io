@@ -17,6 +17,12 @@
 A^B
 X^(100+2)
 
-#Footnots
+#Link
 [1]
 [1]:http://www.jjcat.me
+
+#Footnotes
+That's some text with a footnote.[^1]
+
+[^1]: And that's the footnote.
+
