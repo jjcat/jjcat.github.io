@@ -41,10 +41,12 @@ This is an H2
 
 > ## This is a header.
 > 
-> 190   This is the first list item.
-> 	1.   This is the second list item.
-> 3.   This is 
->+ this is 
+> This is the first list item.'
+> *   This is the second list item.
+> *   This is 
+
+>+ this is
+>- this is 
 >- this is
 >* this is
 > 
@@ -57,7 +59,19 @@ This is an H2
 * this is
 
 
+yest
 
+- this
+  - this
+  - this
+ - this
+   - this
+         - tjos
+             - this
+                 1. tes
+                     - this
+
+- this
 
 #Examples of PHP Markdown Extra syntax
 ##Table

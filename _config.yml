@@ -18,9 +18,15 @@ author :
   twitter : 
   feedburner : 
   
-markdown : rdiscount
+markdown : maruku
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
 rdiscount:
-  extensions: [footnotes]
+  extensions: [smart]
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
