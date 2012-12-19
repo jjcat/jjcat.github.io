@@ -19,3 +19,11 @@ Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis moll
 **lead**
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 {: .lead}
+
+##Emphasis text
+- muted
+  Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.{:.muted}
+- warning
+- error
+- info
+- success
