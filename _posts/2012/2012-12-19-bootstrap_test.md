@@ -11,3 +11,9 @@ Col1 | Very very long head | Very very long head|
 -----|:-------------------:|-------------------:|
 cell | center-align        | right-align        |
 {: .table}
+
+##Lead body
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+{: .lead}
