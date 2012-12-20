@@ -158,8 +158,8 @@ h3 {
 h4 {
     font-size: 21px;
 }
-::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
-::selection{background:rgba(255,255,0,0.3);color:#000}
+::-moz-selection{background:rgba(255,255,0,0.3)}
+::selection{background:rgba(255,255,0,0.3)}
 
 a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
 a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
