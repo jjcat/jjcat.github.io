@@ -9,42 +9,39 @@
 plain text
 
 	# This is H1
+    # 标题H1
 	## This is H2
+	## 标题H2
 	### This is H3
+    ### 标题H3
 	#### This is H4
+    #### 标题H4 
 	##### This is H5
+	##### 标题H5
 	###### This is H6
+	###### 标题H6
 
 looks like in web
 
-<div class="hero-unit">
+
+----------
+
 
 # This is H1
+# 标题H1
 ## This is H2
+## 标题H2
 ### This is H3
+### 标题H3
 #### This is H4
+#### 标题H4 
 ##### This is H5
+##### 标题H5
 ###### This is H6
-####### This is H7
-######## This is H8
+###### 标题H6
 
-</div>
-## Headers
-This is an H1
-=============
+----------
 
-This is an H2
--------------
-# This is an H1
-
-## This is an H2
-
-###### This is an H6
-# This is an H1 #
-
-## This is an H2 ##
-
-### This is an H3 ######
 
 ##Blockquotes
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
@@ -78,23 +75,8 @@ This is an H2
 >     return shell_exec("echo $input | $markdown_script");
 
 
-* this is
-* this is
 
 
-yest
-
-- this
-  - this
-  - this
- - this
-   - this
-         - tjos
-             - this
-                 1. tes
-                     - this
-
-- this
 
 #Examples of PHP Markdown Extra syntax
 ##Table
