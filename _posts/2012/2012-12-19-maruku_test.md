@@ -5,8 +5,8 @@
     tags: ["markdown", "maruku"]
 ---
 ## Headers
-~~~
 
+~~~
 # This is H1
 ## This is H2
 ### This is H3
@@ -15,8 +15,8 @@
 ###### This is H6
 ####### This is H7
 ######## This is H8
-
 ~~~
+
 # This is H1
 ## This is H2
 ### This is H3
