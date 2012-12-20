@@ -24,7 +24,7 @@ public class MyPlayer : MonoBehaviour
 
 
 >注意
->: (是不是只有派生自MonoBehaviour的类才能够进行自定义化Inspector? 不是，例如贴图，模型等不用附加到GameObject上的资源文件，可以在Project面板下显示并选中，在Inspecotor面板中会列出这些资源的属性，并且可以进行修改。如果您也要自定义asset，需要继承自ScriptableObject class。您可以在Project面板中选择一个FBX文件，或者一个Texture文件，查看Inspector的变化。自定义资源和Inspector会在以后的课程中进行讲解。)
+>: 是不是只有派生自MonoBehaviour的类才能够进行自定义化Inspector? 不是，例如贴图，模型等不用附加到GameObject上的资源文件，可以在Project面板下显示并选中，在Inspecotor面板中会列出这些资源的属性，并且可以进行修改。如果您也要自定义asset，需要继承自ScriptableObject class。您可以在Project面板中选择一个FBX文件，或者一个Texture文件，查看Inspector的变化。自定义资源和Inspector会在以后的课程中进行讲解。
 {: .alert}
 
 
