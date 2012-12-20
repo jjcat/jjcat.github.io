@@ -44,6 +44,7 @@ Unity默认的Inspector面板可以随意对该变量进行修改。如果MyPlay
 
 现在我们开始自定义Inspector面板的内容，自定义后的Inspector如上图所示。
 首先创建一个新的C#文件，命名为**MyPlayerEditor.cs**，并将该文件放在**Editor**文件夹下。
+
 [![](http://i.imgur.com/lxcx6.png)](http://i.imgur.com/lxcx6.png)
 ######创建MyPlayerEditor.cs
 >注意
