@@ -161,8 +161,8 @@ h4 {
 ::-moz-selection{background:rgba(255,255,0,0.3)}
 ::selection{background:rgba(255,255,0,0.3)}
 
-a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
-a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::-moz-selection{background:rgba(255,255,0,0.3);}
+a::selection{background:rgba(255,255,0,0.3);}
 
 .page-header{padding-bottom:9px;margin:20px 0 30px;border-bottom:1px solid #eeeeee;}
 ul,ol{padding:0;margin:0 0 10px 25px;}
