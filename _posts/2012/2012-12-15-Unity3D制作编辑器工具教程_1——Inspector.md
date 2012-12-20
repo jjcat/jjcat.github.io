@@ -48,7 +48,7 @@ Unity默认的Inspector面板可以随意对该变量进行修改。如果MyPlay
 [![](http://i.imgur.com/lxcx6.png)](http://i.imgur.com/lxcx6.png)
 ######创建MyPlayerEditor.cs
 >注意
->:(为什么要放在Editor文件夹下？Unity规定所有的Editor classes都必须放在Editor文件夹下，这样Untiy运行Editor文件夹的Editor class，游戏中运行的代码不要放在Editor文件夹下。)
+>:为什么要放在Editor文件夹下？Unity规定所有的Editor classes都必须放在Editor文件夹下，这样Untiy运行Editor文件夹的Editor class，游戏中运行的代码不要放在Editor文件夹下。
 {: .alert}
 
 下面的代码将会创建一个自定义的Inspector，你将会在Inspector面板中看到最后的效果。
