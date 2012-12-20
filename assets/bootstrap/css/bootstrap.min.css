@@ -139,6 +139,33 @@ h1 small{font-size:24.5px;}
 h2 small{font-size:17.5px;}
 h3 small{font-size:14px;}
 h4 small{font-size:14px;}
+h1, h2, h3, h4 {
+    font-family:"Segoe UI Light", "SimYou", "Microsoft YaHei", "Georgia", "Palatino", serif;
+    font-weight: 100;
+}
+h1 {
+    font-size: 34px;
+    margin-bottom: 44px;
+    margin-top: 44px;
+}
+h2 {
+    font-size: 28px;
+    margin-top: 44px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+::-moz-selection{background:rgba(255,48,48,1.0);color:#fff}
+::selection{background:rgba(255,48,48,1.0);color:#fff}
+
+
+
+
+a::-moz-selection{background:rgba(255,48,48,1.0);color:#000}	
+a::selection{background:rgba(255,48,48,1.0);color:#000}
 .page-header{padding-bottom:9px;margin:20px 0 30px;border-bottom:1px solid #eeeeee;}
 ul,ol{padding:0;margin:0 0 10px 25px;}
 ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
