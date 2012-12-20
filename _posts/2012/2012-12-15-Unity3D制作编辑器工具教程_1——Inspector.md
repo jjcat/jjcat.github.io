@@ -1,7 +1,7 @@
 ---
     layout: post
-    title: Unity3D Tools Lesson 1--Inspector
-    tagline:
+    title: Unity3D Tools Lesson 1
+    tagline: Inspector
     tags: [Unity3D]
 ---
 ## 简介 ##
