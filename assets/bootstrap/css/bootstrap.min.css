@@ -158,14 +158,12 @@ h3 {
 h4 {
     font-size: 21px;
 }
-::-moz-selection{background:rgba(255,48,48,1.0);color:#fff}
-::selection{background:rgba(255,48,48,1.0);color:#fff}
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
 
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
 
-
-
-a::-moz-selection{background:rgba(255,48,48,1.0);color:#000}	
-a::selection{background:rgba(255,48,48,1.0);color:#000}
 .page-header{padding-bottom:9px;margin:20px 0 30px;border-bottom:1px solid #eeeeee;}
 ul,ol{padding:0;margin:0 0 10px 25px;}
 ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
