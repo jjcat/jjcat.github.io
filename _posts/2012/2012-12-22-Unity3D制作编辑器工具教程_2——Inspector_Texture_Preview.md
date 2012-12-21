@@ -15,20 +15,19 @@
 
 ###成员变量 
 
-成员变量          |  
------------------|:-------------------
-target           | 被监视的对象
-targets          |一个所有被监视对象的数组（多选情况下）
-serializedObject |一个序列化对象，他表示一个或多个（多选情况下）被监视的对象
+成员变量          |  												  |
+-----------------|----------------------------------------------------|
+target           | 被监视的对象										  |
+targets          |一个所有被监视对象的数组（多选情况下） 				  |
+serializedObject |一个序列化对象，他表示一个或多个（多选情况下）被监视的对象 |
 {: .table}
 
 target和targets
 :target和targets的用法和函义基本相同，都是表示在Project面板或Hierarchy面板中为选中的对象。target返回一个选中的对象，targets返回的是一个对象数组，表示一组选中的对象。例如下图中在Project面板中，只有Tree_01被选中，那么target就会返回Tree_01对象。
-![]({{page.imgurl}}target)
+![]({{page.imgurl}}target.png)
 <!------------------说清楚如果对象没有被Inspector的话，target是不会得到结果的---------------->
-
 如果是多选的情况，那么请使用targets，targets返回一个数组，数组里面包含Tree_01,Tree02,Tree_03和Tree_04。
-![]({{page.imgurl}}targets)
+![]({{page.imgurl}}targets.png)
 <small>仅一个对象被选中</small> {: .muted}
 
 
