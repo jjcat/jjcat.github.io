@@ -79,10 +79,16 @@ looks like in web
 
 
 #Examples of PHP Markdown Extra syntax
+
+============
+
 ##Table
-Col1 | Very very long head | Very very long head|
------|:-------------------:|-------------------:|
-cell | center-align        | right-align        |
+Col1 |head          |  head               |  head              |
+-----|:-------------|:-------------------:|-------------------:|
+cell |left-align    |center-align         | right-align        |
+cell |left-align    |cneter-align         | right-align        |
+
+===========
 
 ##Footnots
 * footnotes [^foot]
@@ -90,12 +96,8 @@ cell | center-align        | right-align        |
 [^foot]: I really was missing those.
 
 
-*footnotes [^foot]
-
-[^foot]: I really was missing those.
-
-![TestImg](/image/github_pages_lesson_00.png "try")
 
 
-* footnotes [^foot](Http://tteee)
-[^foot]: I really was missing those.
+
+
+
