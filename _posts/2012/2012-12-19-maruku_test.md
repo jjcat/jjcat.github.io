@@ -66,9 +66,9 @@ looks like in web
 > *   This is 
 
 >+ this is
->- this is 
->- this is
->* this is
+>	- this is 
+>	- this is
+>		* this is
 > 
 > Here's some example code:
 > 
@@ -80,7 +80,7 @@ looks like in web
 
 #Examples of PHP Markdown Extra syntax
 
-============
+------------
 
 ##Table
 Col1 |head          |  head               |  head              |
@@ -88,12 +88,24 @@ Col1 |head          |  head               |  head              |
 cell |left-align    |center-align         | right-align        |
 cell |left-align    |cneter-align         | right-align        |
 
-===========
+
+-------------
 
 ##Footnots
-* footnotes [^foot]
+footnotes[^foot]
 
 [^foot]: I really was missing those.
+
+
+--------------
+
+##Fenced Code Blocks
+This is a paragraph introducing:
+
+~~~~~~~~~~~~~~~~~~~~~
+a one-line code block
+~~~~~~~~~~~~~~~~~~~~~
+
 
 
 
