@@ -7,8 +7,8 @@ group: navigation
 {% include JB/setup %}
 
 ##Follow Me
-- ![Sina Weibo](image/about/weibo.ico)
-- ![Github](image/about/github.ico)
+- [![Sina Weibo](image/About/weibo.ico)](http://weibo.com/jiejieup)
+- [![Github](image/About/github.ico)](http://github.com/jjcat)
 
 ## Contact Me
 - JJCat@outlook.com
