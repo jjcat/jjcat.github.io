@@ -11,7 +11,7 @@ Sine Weibo
 :	[![Sina Weibo](image/About/weibo.ico "Sina Weibo")](http://weibo.com/jiejieup)
 
 Github
-:	[![Github](image/About/github.ico "Github")]
+:	[![Github](image/About/github.ico "Github")](http://github.com/jjcat)
 
 
 ## Contact Me
