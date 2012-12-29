@@ -1,6 +1,6 @@
 ---
 layout: page
-title: JJCat's Weblog
+title: JJCat's Blog
 tagline: GameDev Programming
 ---
 {% include JB/setup %}
