@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: JJCat's Blog
+tagline: GameDev Programming
 ---
 {% include JB/setup %}
 

@@ -4,24 +4,44 @@
     tagline:
     tags: ["markdown", "maruku"]
 ---
-# Markdown: Syntax
-
 ## Headers
-This is an H1
-=============
 
-This is an H2
--------------
-# This is an H1
+plain text
 
-## This is an H2
+	# This is H1
+    # 标题H1
+	## This is H2
+	## 标题H2
+	### This is H3
+    ### 标题H3
+	#### This is H4
+    #### 标题H4 
+	##### This is H5
+	##### 标题H5
+	###### This is H6
+	###### 标题H6
 
-###### This is an H6
-# This is an H1 #
+looks like in web
 
-## This is an H2 ##
 
-### This is an H3 ######
+----------
+
+
+# This is H1
+# 标题H1
+## This is H2
+## 标题H2
+### This is H3
+### 标题H3
+#### This is H4
+#### 标题H4 
+##### This is H5
+##### 标题H5
+###### This is H6
+###### 标题H6
+
+----------
+
 
 ##Blockquotes
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
@@ -46,51 +66,52 @@ This is an H2
 > *   This is 
 
 >+ this is
->- this is 
->- this is
->* this is
+>	- this is 
+>	- this is
+>		* this is
 > 
 > Here's some example code:
 > 
 >     return shell_exec("echo $input | $markdown_script");
 
 
-* this is
-* this is
 
 
-yest
-
-- this
-  - this
-  - this
- - this
-   - this
-         - tjos
-             - this
-                 1. tes
-                     - this
-
-- this
 
 #Examples of PHP Markdown Extra syntax
+
+------------
+
 ##Table
-Col1 | Very very long head | Very very long head|
------|:-------------------:|-------------------:|
-cell | center-align        | right-align        |
+Col1 |head          |  head               |  head              |
+-----|:-------------|:-------------------:|-------------------:|
+cell |left-align    |center-align         | right-align        |
+cell |left-align    |cneter-align         | right-align        |
+
+
+-------------
 
 ##Footnots
-* footnotes [^foot]
+footnotes[^foot]
 
 [^foot]: I really was missing those.
 
 
-*footnotes [^foot]
+--------------
 
-[^foot]: I really was missing those.
+##Fenced Code Blocks
+This is a paragraph introducing:
 
-![TestImg](/image/github_pages_lesson_00.png "try")
+~~~~~~~~~~~~~~~~~~~~~
+
+a one-line code block
+
+~~~~~~~~~~~~~~~~~~~~~
 
 
-* footnotes [^foot](Http://tteee)
-[^foot]: I really was missing those.
+
+
+
+
+
+
