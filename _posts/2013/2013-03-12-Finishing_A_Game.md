@@ -4,8 +4,6 @@
     tagline:
     tags: [flash, 2D water, game] 
 ---
-
-
 作者：[Derek Yu](http://www.derekyu.com/) 
 
 译者：[杰杰猫](http://jjcat.me)  jjcat@outlook.com
