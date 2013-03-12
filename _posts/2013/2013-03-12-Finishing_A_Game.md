@@ -1,7 +1,7 @@
 ---
     layout: post
     title: Finishing A Game
-    tagline: 完成一款游戏
+    tagline: Finish
 	tags: [Game, India Game]
 ---
 
