@@ -1,8 +1,8 @@
 ---
     layout: post
     title: Finishing A Game
-    tagline: Finish
-	tags: [Game, India Game]
+    tagline:
+    tags: [flash, 2D water, game] 
 ---
 
 
