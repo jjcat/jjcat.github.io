@@ -36,8 +36,7 @@
 
 ![](http://www.derekyu.com/tumblr/finishgame02.jpg)
 
----
-I’ve found that there are three types of games that pique my interest: games I want to make, games I want to have made, and games I’m good at making.
+
 
 
 我发现有三种类型的游戏能引起我的兴趣：我想做的游戏，我幻想能做的游戏和我擅长做的游戏。
