@@ -2,7 +2,7 @@
     layout: post
     title: Finishing A Game
     tagline: 完成一款游戏
-	tags: [独立游戏, 游戏开发, 安琪拉之歌, 翻译] 
+	tags: [Game, India Game]
 ---
 
 
