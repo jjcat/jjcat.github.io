@@ -1,16 +1,16 @@
 ---
     layout: post
     title: Finishing A Game
-    tagline:
-    tags: [flash, 2D water, game] 
+    tagline: 完成一款游戏
+    tags: [独立游戏, 游戏开发, 安琪拉之歌] 
 ---
 作者：[Derek Yu](http://www.derekyu.com/) 
 
 译者：[杰杰猫](http://jjcat.me)  jjcat@outlook.com
 
-[原文链接](http://makegames.tumblr.com/post/44181247500/making-it-in-indie-games-starter-guide)
+[原文](http://makegames.tumblr.com/post/44181247500/making-it-in-indie-games-starter-guide)由《安琪拉之歌》的作者[Derek Yu](http://www.derekyu.com/)发表在自己的博客中，阅读后感觉收获颇多。[译文](http://article.yeeyan.org/view/62500/351823)发表在译言网上，对翻译有任何的建议可以留言，发邮件或在译言上挑错。本人英文水平一般，故有翻译错误还请原谅。下面为译文。
 
-[译文链接](http://article.yeeyan.org/view/62500/351823)
+---
 
 ![](http://www.derekyu.com/tumblr/finishgame01.jpg)
 
