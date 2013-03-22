@@ -1,8 +1,8 @@
 ---
     layout: post
     title: Offset Bezier Curve
-    tagline: 
-    tags: [Bezier, Unity3d] 
+    tagline: 对贝塞尔(Bezier)曲线进行偏移
+    tags: [Bezier, Unity3D] 
 ---
 #Unfinished
 
