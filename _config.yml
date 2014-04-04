@@ -18,7 +18,7 @@ author :
   twitter : 
   feedburner : 
   
-markdown : Kramdown
+markdown : kramdown
 maruku:
   use_tex:    false
   use_divs:   false
