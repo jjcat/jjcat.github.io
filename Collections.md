@@ -19,5 +19,12 @@ group: navigation
 - [Pathfinding on a GPU](http://computer-graphics.se/cuda-kurs/pres/AnjaJ_CUDAPresentation.pdf)
     
     虽然标题讲的是Pathfinding on GPU,但关于GPU的内容并不多，反而介绍了很多寻路相关的基础概念和知识。
+
+## Tile Map
+
+- [Data structures for tile based games](http://archive.gamedev.net/archive/reference/programming/features/arttilebase/page2.html)
+
+    介绍了魔兽红警一类游戏地图的数据结构，包括地图单元和游戏单位的数据结构。没有关于地图显示的内容。
+
     
     
