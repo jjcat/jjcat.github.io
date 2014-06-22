@@ -13,7 +13,7 @@
 
 第一步当加载完Loading场景后，调用如下的`LoadGame`函数开始加载游戏场景，使用异步加载的方式加载场景1(Loading场景为0，主场景为1)，通过Unity提供的Coroutine机制，我们可以方便的在每一帧结束后调用`SetLoadingPercentage`函数来更新界面中显示的进度条的数值。
 
-~~~
+{% highlight csharp %}
 public void LoadGame() {
     StartCoroutine(StartLoading_1(1));
 }
@@ -25,7 +25,7 @@ private IEnumerator StartLoading_1(int scene) {
         yield return new WaitForEndOfFrame();
     }        
 }
-~~~
+{% endhighlight  %}
 
 最后进度条的效果显示如下:
 
@@ -37,7 +37,7 @@ private IEnumerator StartLoading_1(int scene) {
 
 为了让进度条能显示100%，取巧一点的办法是将`AsyncOperation.progress`的值乘上2，这样当加载到50%的时候界面上就显示100%了。缺点是当界面上显示100%的时候，用户还要等待一段时间才会进入游戏。其实Unity提供了手动切换场景的方法，把`AsyncOperation.allowSceneActivation`设为`false`就可以禁止Unity加载完毕后自动切换场景，修改后的`StartLoading_2`代码如下:
 
-~~~
+{% highlight csharp %}
 // this function is not work
 private IEnumerator StartLoading_2() {
     AsyncOperation op = Application.LoadLevelAsync(1);
@@ -48,7 +48,7 @@ private IEnumerator StartLoading_2() {
     }
     op.allowSceneActivation = true;   
 }
-~~~
+{% endhighlight  %}
 
 我们首先将`AsyncOperation.allowSceneActivation`设为`false`，当加载完成后再设为`true`。代码看上去没有错，但是执行的结果是进度条最后会一直停留在90%上，场景不会切换。通过打印log发现`AsyncOperation.isDone`一直为`false`，`AsyncOperation.progress`的值增加到0.9后就保持不变了，也就是说场景永远不会被加载完毕。
 
@@ -57,7 +57,7 @@ private IEnumerator StartLoading_2() {
 
 在这个[帖子](http://forum.unity3d.com/threads/using-allowsceneactivation.166106/#post-1146076)中找到了答案，原来把`allowSceneActivation`设置为`false`后，Unity就只会加载场景到90%，剩下的10%要等到`allowSceneActivation`设置为`true`后才加载，这不得不说是一个坑。所以代码改为如下。当`AsyncOperation.progress`到达0.9后，就直接把进度条的数值更新为100%，然后设置`AsyncOperation.allowSceneActivation`为`ture`，让Unity继续加载未完成的场景。
 
-~~~
+{% highlight csharp %}
 private IEnumerator StartLoading_3() {
     AsyncOperation op = Application.LoadLevelAsync(1);
     op.allowSceneActivation = false;
@@ -69,7 +69,7 @@ private IEnumerator StartLoading_3() {
     yield return new WaitForEndOfFrame();
     op.allowSceneActivation = true;   
 }
-~~~
+{% endhighlight  %}
 最后的效果如下：
 
 ![](http://i.imgur.com/BircPFa.gif)
@@ -80,7 +80,7 @@ private IEnumerator StartLoading_3() {
 
 上述的进度条虽然解决了100%显示的问题，但由于进度条的数值更新不是连续的，所以看上去不够自然和美观。为了看上去像是在连续加载，可以每一次更新进度条的时候插入过渡数值。这里我采用的策略是当获得`AsyncOperation.progress`的值后，不立即更新进度条的数值，而是每一帧在原有的数值上加1，这样就会产生数字不停滚动的动画效果了，迅雷中显示下载进度就用了这个方法。
 
-~~~
+
 {% highlight csharp %}
 private IEnumerator StartLoading_4() {
     int displayProgress = 0;
@@ -105,7 +105,7 @@ private IEnumerator StartLoading_4() {
     op.allowSceneActivation = true;
 }
 {% endhighlight  %}
-~~~
+
 
 `displayProgress`用来记录要显示在进度条上的数值，最后进度条的动画如下：
 
