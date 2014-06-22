@@ -80,6 +80,7 @@ private IEnumerator StartLoading_3() {
 
 上述的进度条虽然解决了100%显示的问题，但由于进度条的数值更新不是连续的，所以看上去不够自然和美观。为了看上去像是在连续加载，可以每一次更新进度条的时候插入过渡数值。这里我采用的策略是当获得`AsyncOperation.progress`的值后，不立即更新进度条的数值，而是每一帧在原有的数值上加1，这样就会产生数字不停滚动的动画效果了，迅雷中显示下载进度就用了这个方法。
 
+{% highlight csharp %}
 ~~~
 private IEnumerator StartLoading_4() {
     int displayProgress = 0;
@@ -103,8 +104,8 @@ private IEnumerator StartLoading_4() {
     }
     op.allowSceneActivation = true;
 }
-
 ~~~
+{% endhighlight  %}
 
 `displayProgress`用来记录要显示在进度条上的数值，最后进度条的动画如下：
 
