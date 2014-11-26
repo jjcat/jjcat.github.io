@@ -96,9 +96,9 @@ Inserts the given tween at the same time position of the last tween added to the
 	|--------------------|---------------|
 	|sequence            |last tween     |
 	|--------------------|---------------|
-	   	                 |+++++++++++++++++++|
-	       	             |tween              |
-	           	         |+++++++++++++++++++|
+	                     |+++++++++++++++++++|
+	                     |tween              |
+	                     |+++++++++++++++++++|
 
 ___
 
