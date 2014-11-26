@@ -5,7 +5,7 @@
     tags: [Unity3D, DOTween]
 ---
 
-最近在使用DOTween制作一些动画过渡的内容，发现非常好用，使用Sequence类可以方便的组织Tweens来制作复杂的过渡动画。Sequence的几个函数文档说明都比较简单，我列出每个函数调用后的Sequence变化以方便查阅。
+最近在使用[DOTween](http://dotween.demigiant.com/documentation.php)制作一些动画过渡的内容，发现非常好用，使用Sequence类可以方便的组织Tweens来制作复杂的过渡动画。Sequence的几个函数文档说明都比较简单，我列出每个函数调用后的Sequence变化以方便查阅。
 
 下图表示调用函数前的Sequence。
 
