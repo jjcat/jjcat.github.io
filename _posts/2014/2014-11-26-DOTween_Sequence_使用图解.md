@@ -59,7 +59,7 @@ ___
 ###Insert(float atPosition, Tween tween)
 Inserts the given tween at the given time position, thus allowing you to overlap tweens instead than just placing them one after each other.
 
-在给定的时间位置上添加一个tween，可以实现同时播放多个tween的效果，而不是一个接着一个播放。
+在给定的时间位置上放置一个tween，可以实现同时播放多个tween的效果，而不是一个接着一个播放。
 
 	|-----------------------------------|
 	|sequence                           |
@@ -74,7 +74,7 @@ ___
 ###InsertCallback(float atPosition, TweenCallback callback)
 Inserts the given callback at the given time position.
 
-在给定的时间位置上添加一个回调函数。
+在给定的时间位置上放置一个回调函数。
 
 
 	|-----------------------------------|
@@ -91,7 +91,7 @@ ___
 ###Join(float atPosition, Tween tween)
 Inserts the given tween at the same time position of the last tween added to the Sequence.
 
-在最后一个tween的开始处插入一个tween。
+在Sequence的最后一个tween的开始处放置一个tween。
 
 	|--------------------|---------------|
 	|sequence            |last tween     |
