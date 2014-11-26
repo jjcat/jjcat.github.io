@@ -17,6 +17,7 @@
 
 ___
 
+
 ###Append(Tween tween)
 Adds the given tween to the end of the Sequence.
 
@@ -27,7 +28,9 @@ Adds the given tween to the end of the Sequence.
 |sequence                           |tween        |
 |-----------------------------------|+++++++++++++|
 ```
+
 ___
+
 
 ###AppendCallback(TweenCallback callback)
 Adds the given callback to the end of the Sequence.
@@ -40,6 +43,7 @@ Adds the given callback to the end of the Sequence.
 |-----------------------------------|+
                                  callback
 ```
+
 ___
 
 ###AppendInterval(float interval)
@@ -52,7 +56,9 @@ Adds the given interval to the end of the Sequence.
 |sequence                           |interval |
 |-----------------------------------|+++++++++|
 ```
+
 ___
+
 
 ###Insert(float atPosition, Tween tween)
 Inserts the given tween at the given time position, thus allowing you to overlap tweens instead than just placing them one after each other.
@@ -67,7 +73,9 @@ Inserts the given tween at the given time position, thus allowing you to overlap
 |atPosition         |tween  |
 |+++++++++++++++++++|+++++++|
 ```
+
 ___
+
 
 ###InsertCallback(float atPosition, TweenCallback callback)
 Inserts the given callback at the given time position.
@@ -83,7 +91,9 @@ Inserts the given callback at the given time position.
 |+++++++++++++++++++|+
                 callback
 ```
+
 ___
+
 
 ###Join(float atPosition, Tween tween)
 Inserts the given tween at the same time position of the last tween added to the Sequence.
@@ -100,6 +110,7 @@ Inserts the given tween at the same time position of the last tween added to the
 ```
 
 ___
+
 ###Prepend(Tween tween)
 Adds the given tween to the beginning of the Sequence, pushing forward in time the rest of the contents
 
@@ -110,7 +121,9 @@ Adds the given tween to the beginning of the Sequence, pushing forward in time t
 |tween       |sequence                            |
 |++++++++++++|------------------------------------|
 ```
+
 ___
+
 
 ###PrependCallback(TweenCallback callback)
 Adds the given callback to the beginning of the Sequence.
@@ -123,7 +136,9 @@ Adds the given callback to the beginning of the Sequence.
   +|------------------------------------|
 callback
 ```
+
 ___
+
 
 ###PrependInterval(float interval)
 Adds the given interval to the beginning of the Sequence, pushing forward in time the rest of the contents.
