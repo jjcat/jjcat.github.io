@@ -62,7 +62,7 @@ Inserts the given callback at the given time position.
 ___
 
 
-###Join(float atPosition, Tween tween)
+###Join(Tween tween)
 Inserts the given tween at the same time position of the last tween added to the Sequence.
 
 在Sequence的最后一个tween的开始处放置一个tween。
